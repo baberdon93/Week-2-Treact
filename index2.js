@@ -28,3 +28,6 @@ document.addEventListener("click", function(event) {
 showSlide(slideIndex);
 
 
+
+
+

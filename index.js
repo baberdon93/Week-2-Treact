@@ -1,4 +1,4 @@
-//Section Transitions
+
 
 function openMenu() {
     document.body.classList += " menu--open"
@@ -6,7 +6,7 @@ function openMenu() {
   
 function closeMenu() {
     document.body.classList.remove('menu--open')
-  }
+  };
 
 
 
@@ -51,8 +51,7 @@ function showSlide(index) {
   }
   slides[slideIndex].style.display = "block";
 
-  var timer;
-timer = setTimeout(slideIt, 500);
+ 
 }
 
 document.getElementById("prevBtn").addEventListener("click", function() {

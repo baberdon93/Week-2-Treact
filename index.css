@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
   
 
 
@@ -222,7 +226,7 @@ nav {
 
 .menu__backdrop {
   position: absolute;
-  background-color: #6315ffd2;
+  background-color: #2a0279d2;
   top: 0;
   left: 0;
   right: 0;
@@ -264,7 +268,7 @@ nav {
 
 .menu__link {
   text-decoration: none;
-  color: #000000;
+  color: #a1a1a1;
   -webkit-transition: all 2s ease 0s;
   transition: all 300ms ease;
 }
@@ -1374,6 +1378,15 @@ Footer
   
 }
 
+i.fa {
+  -webkit-animation: show 1s 1;
+  /* any other properties to override from FontAwesome's default .fa rule */
+}
+@-webkit-keyframes show {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .get__started {
   background-color: #f56565;
     color: white;
@@ -1516,8 +1529,13 @@ FOOTER
 .linklogo {
  width: 30px;
  margin-right: 32px;
+ transition: all 300ms ease;
 
  
+}
+
+.linklogo:hover {
+  filter: invert(1);
 }
 
 
@@ -1595,7 +1613,10 @@ SLIDE
 }
 
 @media (max-width: 768px) {
-  
+
+  .treact2 {
+    margin: 0;
+  }
   
   
   .container__columns {
