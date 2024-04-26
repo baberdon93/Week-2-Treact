@@ -625,7 +625,8 @@ margin-top: 32px;
 .column__rightboxtwo {
   display: flex;
   flex-direction: column;
-  align-content: center;;
+  align-items: center;
+  align-content: center;
   width: 50%;
 }
 
@@ -1065,6 +1066,11 @@ TESTIMONIALS SLIDE SHOW
 
 */
 
+.testimonials {
+  font-size: 16px;
+  color: #6415ff;
+}
+
 .slideshow-container {
   max-width: 800px;
   margin: 0 auto;
@@ -1101,6 +1107,7 @@ TESTIMONIALS SLIDE SHOW
 
 .stars {
   display: flex;
+  margin-bottom: 16px;
 }
 
 .star {
@@ -1117,7 +1124,6 @@ TESTIMONIALS SLIDE SHOW
  font-size: 20px;
  margin-top: 16px;
  position: relative;
- 
  transition-duration: all 330ms;
  
 }
@@ -1165,9 +1171,8 @@ TESTIMONIALS SLIDE SHOW
 .arrows {
   position: absolute;
   display: flex;
-  right: 50px;
-  transform: translateX();
   transform: translateY(-103px);
+  margin-left: 350px
   
 }
 
@@ -1263,16 +1268,11 @@ DROPDOWN MENU
  
 }
 
-.dropdown__wrapper {
-  
+.dropdown__wrapper { 
   margin: 0 69px;
   padding-bottom: 96px 0;
-  
-  
 }
-.dropdown {
 
-}
 
 
 .dropdown-menu {
@@ -1316,6 +1316,7 @@ DROPDOWN MENU
   height: 80px;
   font-size: 16px;
   color: #171718;
+  
  
 }
 
@@ -1359,17 +1360,23 @@ Footer
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
   background-color: rgba(100, 21, 255, 1);
   align-content: center;
+ 
+  
 }
+
+
+
 
 .text__buttons {
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
   margin-right: 24px;
   margin-bottom: 16px;
 }
 
-.devtext {
-  width: 50%;
+.devtext2 {
+  max-width: 50%;
   font-size: 30px;
   color: #F7Fafc;
   margin-top: 16px;
@@ -1576,6 +1583,17 @@ SLIDE
     align-content: center;
   }
 
+  .container__columns {
+    padding-bottom: 0;
+  }
+
+  .arrows {
+    margin-left: 110px;
+    transform: translateY(-320%);
+    ;
+    
+  }
+
   .image__column {
     max-width: 100%;
   }
@@ -1609,10 +1627,30 @@ SLIDE
   .steps__title {
     text-align: center;
   }
-  
+  .footer__links {
+    margin-top: 48px;
+    text-align: left;
+  }
+  .fname {
+    margin-top: 10px;
+  }
+  .main1 {
+    margin-right: 10px;
+  }
+  .main3 {
+    align-content: center;
+  }
+  .division__between {
+    border: none;
+  }
 }
 
 @media (max-width: 768px) {
+
+  h5.devtext {
+    font-size: 20px;
+    align-items: center;;
+  }
 
   .treact2 {
     margin: 0;
@@ -1734,8 +1772,24 @@ SLIDE
 }
 
 .pricingplans__container {
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  ;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-right: 0;
+  margin-top: 24px;
+}
+.description {
+  text-align: left;
+}
+.textcontainer {
+  margin-top: 24px;
 }
 
 p {
@@ -1748,13 +1802,27 @@ p {
   text-align: center;
 }
 
+.purple__steps {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.steps {
+  margin-left: 0;
+}
+
 .steps__title {
   text-align: center;
 }
 
-.devtext {
-  font-size: 24px;
-  margin: 0;
+.devtext2 {
+  font-size: 20px;
+  color: #f7fafc;
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 0 0;
+  height: 150px;
 }
 
 .contactus__wrapper {
@@ -1765,9 +1833,10 @@ p {
 
 .text__buttons {
   display: flex;
-  justify-content: center;
-  transform: translateX(20px);
+  align-items: center;
+  transform: translateX(0px);
   margin-bottom: 40px;
+  margin-right: 0;
 }
 
 .dropdown__wrapper {
@@ -1778,11 +1847,38 @@ p {
 .footerfooter {
   display: flex;
   flex-direction: column;
+  max-height: 100%;
+  align-items: center;
+}
+
+.get__started {
+  max-width: 100px;
+
+}
+
+.contact__us {
+  max-width: 100px;
+}
+
+.footer {
+  display: flex;
+  
+  
+}
+
+.footer__links {
+  display: flex;
+  width: calc(100% / 2);
+  
+  flex-wrap: wrap;
+ 
+ 
+  
+  
+  
 }
 
 
-
- 
 }
 
 @media (max-width: 1000px) {
